@@ -22,8 +22,6 @@ This project analyzes a dataset of **10,000 healthcare patient records** using M
 
 The workbook demonstrates an end-to-end Excel analytics workflow, from raw data preparation and cleaning to exploratory analysis, Pivot Tables, advanced formulas, and insight generation.
 
-> **Note:** This is a descriptive analysis of the supplied dataset. The findings describe patterns in this dataset and should not be interpreted as clinical conclusions or evidence of causation.
-
 ## Project Objectives
 
 - Prepare and organize raw healthcare data for analysis.
