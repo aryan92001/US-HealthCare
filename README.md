@@ -1,5 +1,21 @@
 # US Healthcare Data Analysis | Excel Project
 
+<p>
+  <img src="https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Data_Cleaning-4472C4?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Data_Transformation-0078D4?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Pivot_Tables-70AD47?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Excel_Formulas-217346?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/COUNTIFS-5B9BD5?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Calculated_Columns-8064A2?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Data_Analysis-ED7D31?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Demographic_Analysis-C55A11?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Time_Based_Analysis-4472C4?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Billing_Analysis-00A6A6?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Healthcare_Analytics-7030A0?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Business_Insights-FFC000?style=for-the-badge"/>
+</p>
+
 ## Project Overview
 
 This project analyzes a dataset of **10,000 healthcare patient records** using Microsoft Excel. The objective is to explore patient demographics, medical conditions, hospital admissions, insurance providers, billing amounts, medications, test results, and length of stay.
