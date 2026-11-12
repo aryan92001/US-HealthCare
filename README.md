@@ -16,239 +16,205 @@
   <img src="https://img.shields.io/badge/Business_Insights-FFC000?style=for-the-badge"/>
 </p>
 
-## Project Overview
+## 📌 Project Overview
 
-This project analyzes a dataset of **10,000 healthcare patient records** using Microsoft Excel. The objective is to explore patient demographics, medical conditions, hospital admissions, insurance providers, billing amounts, medications, test results, and length of stay.
+This project focuses on analyzing **10,000 US healthcare patient records** using Microsoft Excel to uncover meaningful insights into patient demographics, medical conditions, hospital admissions, insurance providers, billing amounts, and treatment patterns.
 
-The workbook demonstrates an end-to-end Excel analytics workflow, from raw data preparation and cleaning to exploratory analysis, Pivot Tables, advanced formulas, and insight generation.
+The project involves data cleaning, data transformation, calculated columns, PivotTables, PivotCharts, and advanced analytical techniques to understand healthcare trends and support data-driven decision-making.
 
-## Project Objectives
+## 🎯 Project Objectives
 
-- Prepare and organize raw healthcare data for analysis.
-- Explore patient demographics and age segments.
-- Understand the distribution of medical conditions.
-- Compare admission types and healthcare billing.
-- Analyze insurance-provider patient volumes and billing patterns.
-- Explore relationships between age groups, gender, blood types, and medical conditions.
-- Examine admission timing and length-of-stay patterns.
-- Translate analytical results into clear, data-backed insights.
+- Analyze patient demographics based on age, gender, and blood groups.
+- Identify the most common medical conditions among patients.
+- Examine hospital admissions by admission type and time period.
+- Analyze healthcare billing amounts across different categories.
+- Evaluate insurance provider distribution and patient coverage.
+- Investigate relationships between age groups, gender, and medical conditions.
+- Identify patterns in patient stays and treatment outcomes.
+- Present meaningful insights through PivotTables and PivotCharts.
 
-## Dataset Description
+## 📂 Project Structure
 
-The workbook contains **10,000 patient records** and a prepared analysis table with 25 fields.
+The Excel workbook contains **9 worksheets**, organized into data preparation and analytical sections.
 
-Key fields include:
-
-| Category | Fields |
+| Sheet Name | Description |
 |---|---|
-| Patient details | Name, Age, Gender, Blood Type |
-| Clinical information | Medical Condition, Medication, Test Results |
-| Admission details | Date of Admission, Admission Type, Discharge Date |
-| Hospital information | Doctor, Hospital, Room Number |
-| Financial information | Insurance Provider, Billing Amount |
-| Derived analysis fields | Age Bucket, Demographic Segment, Duration of Stay |
-| Date dimensions | Year, Quarter, Month, Month Name, Week, Day of Admission |
+| Raw Data | Original dataset containing 10,000 patient records. |
+| HealthCare | Cleaned and standardized healthcare dataset with additional analytical columns. |
+| Main | Main analysis dataset containing calculated fields and helper columns. |
+| Pivot Insights | Analysis of average billing amounts across admission types. |
+| Sample Analysis | Initial PivotTable analysis of hospitals, blood groups, medical conditions, age segments, and other categories. |
+| Advanced Analysis | Advanced analysis of medical conditions across demographic segments and gender. |
+| Advanced Analysis 2 | Cross-analysis of medical conditions, blood groups, insurance providers, and billing patterns. |
+| Insights 1 | Detailed analysis of medical conditions across age and gender combinations. |
+| Insights 2 | Additional analytical summaries involving patient counts, billing amounts, and demographic patterns. |
 
-## Tools & Techniques
+## 📊 Dataset Information
 
-**Tool:** Microsoft Excel
+- **Total Records:** 10,000
+- **Total Worksheets:** 9
+- **PivotTables:** 20
+- **Embedded Charts:** 10
+- **File Format:** Excel (.xlsx)
 
-**Techniques used:**
-- Data cleaning and standardization
-- Data transformation and calculated columns
-- Excel formulas and functions, including `COUNTIFS`, `MIN`, and percentage calculations
-- Pivot Tables and Pivot-based summaries
-- Demographic segmentation
-- Comparative and descriptive analysis
-- Conditional formatting and analytical summaries
+### Key Dataset Columns
 
-## Workbook Structure
+- Patient Name
+- Age
+- Gender
+- Blood Type
+- Medical Condition
+- Date of Admission
+- Doctor
+- Hospital
+- Insurance Provider
+- Billing Amount
+- Room Number
+- Admission Type
+- Discharge Date
+- Medication
+- Test Results
 
-The Excel workbook is organized into the following sheets:
+## 🧹 Data Cleaning & Preparation
 
-| Sheet | Purpose |
-|---|---|
-| `Raw Data` | Original source dataset |
-| `HealthCare` | Prepared healthcare dataset |
-| `Main` | Main analysis-ready dataset with derived fields |
-| `Pivot Insights` | Admission-type billing analysis |
-| `Sample Analysis` | Initial summaries of hospitals, conditions, and gender |
-| `Advanced Analysis` | Condition, age-group, and gender analysis |
-| `Advanced Analysis 2` | Blood type, insurance, and billing comparisons |
-| `Insights 1` | Medical-condition analysis across demographic segments |
-| `Insights 2` | Admission timing, weekly patterns, and billing analysis |
+The original dataset was processed to improve consistency, accuracy, and analytical usability.
 
-## Data Preparation & Transformation
+Key activities included:
 
-The workbook includes a raw-data sheet and prepared analysis sheets. The prepared dataset standardizes fields such as medical-condition names and admission categories, and includes additional fields used for analysis.
+- Standardizing categorical values and text formatting.
+- Correcting inconsistent capitalization in medical conditions.
+- Handling inconsistent admission-type entries.
+- Cleaning and standardizing billing amount values.
+- Converting relevant columns into appropriate data formats.
+- Creating additional calculated columns for demographic and time-based analysis.
 
-Derived fields include:
+## ⚙️ Excel Techniques & Formulas Used
 
-- **Age Bucket:** Groups patients into Young, Middle, and Senior categories.
-- **Demographic Segment:** Combines age category and gender.
-- **Duration of Stay:** Calculates the difference between admission and discharge dates.
-- **Year, Quarter, Month, Month Name, Week, and Day of Admission:** Supports time-based analysis.
-- **Week Stays:** Groups length of stay into weekly bands.
+- Data Cleaning and Formatting
+- Sorting and Filtering
+- Conditional Formatting
+- Excel Formulas
+- IF and Nested IF
+- COUNTIFS
+- Date and Time Functions
+- Calculated Columns
+- Age Group Classification
+- Date-Based Analysis
+- PivotTables
+- PivotCharts
+- Advanced PivotTable Analysis
 
-These transformations make it easier to summarize the data and compare patient groups.
+## 📈 PivotTable & PivotChart Analysis
 
-## Key Analytical Findings
+The project includes 20 PivotTables and 10 embedded charts across multiple analytical worksheets.
 
-The following findings are based on the prepared dataset and the Pivot Table summaries in the workbook.
-
-### 1. Hypertension is the most frequently recorded medical condition
-
-- Hypertension: **2,155 patients (21.55%)**
-- Cancer: 1,647 patients
-- Obesity: 1,627 patients
-- Arthritis: 1,587 patients
-- Asthma: 1,550 patients
-- Diabetes: 1,434 patients
-
-
-<img width="782" height="436" alt="image" src="https://github.com/user-attachments/assets/e4473e76-3bb4-4ff2-9b78-6ded59a2a2e8" />
-
-
-**Insight:** Hypertension has the highest patient count among the six conditions with count of 2,155 patients, while diabetes has the lowest.
-
-### 2. Senior patients represent the largest age group
-
-- Senior: **3,813 patients (38.13%)**
-- Middle: 3,702 patients (37.02%)
-- Young: 2,485 patients (24.85%)
+### 1. Pivot Insights
+- Average billing amount by admission type.
+- Comparison of billing amounts across Emergency, Elective, and Urgent admissions.
 
 
-<img width="563" height="378" alt="image" src="https://github.com/user-attachments/assets/9aa9b73c-0cf5-45fc-b915-33550f3777cc" />
+<img width="736" height="482" alt="image" src="https://github.com/user-attachments/assets/3e626e0d-0b33-42d4-bde1-33ae28c96268" />
 
 
-**Insight:** Senior patients form the largest age segment in the dataset, followed closely by the Middle age group.
-
-### 3. Emergency admissions have the highest average billing amount
-
-| Admission Type | Average Billing Amount |
-|---|---:|
-| Emergency | $24,279.06 |
-| Elective | $23,038.95 |
-| Urgent | $22,731.21 |
+### 2. Sample Analysis
+- Patient distribution across hospitals.
+- Patient count by blood group.
+- Medical condition distribution.
+- Patient segmentation by age group.
+- Admission and test-result analysis.
 
 
-<img width="733" height="482" alt="image" src="https://github.com/user-attachments/assets/4b35e8c9-a8ca-49be-b64e-bc05361af71d" />
+<img width="690" height="376" alt="image" src="https://github.com/user-attachments/assets/5b3c95b8-c633-4b62-86dd-afbdbfd312a4" />
+
+<img width="647" height="398" alt="image" src="https://github.com/user-attachments/assets/d9ed0da8-f902-4e25-833c-876c8c41fc7f" />
 
 
-**Insight:** Emergency admissions have the highest average billing amount, approximately 3.8% above the overall average of $23,381.11.
-
-### 4. Female patients account for a slightly larger share of records
-
-- Female: **5,075 patients (50.75%)**
-- Male: 4,925 patients (49.25%)
-
-
-<img width="645" height="396" alt="image" src="https://github.com/user-attachments/assets/8f330b21-233f-4794-94af-147a2beb7cc2" />
+### 3. Advanced Analysis
+- Medical conditions across demographic segments.
+- Medical condition distribution by gender.
+- Age-group comparisons across different health conditions.
+- Cross-category patient distribution.
 
 
-**Insight:** The dataset has a nearly balanced gender distribution, with a small majority of female patient records.
+<img width="813" height="422" alt="image" src="https://github.com/user-attachments/assets/074d62e2-47f9-4878-9aec-6549b89fb64d" />
 
-### 5. Medicare has the highest patient count among insurance providers
+<img width="527" height="352" alt="image" src="https://github.com/user-attachments/assets/397d95c1-183d-478e-aca3-2521ea935db8" />
 
-| Insurance Provider | Patient Count |
-|---|---:|
-| Medicare | 2,428 |
-| Cigna | 1,939 |
-| Aetna | 1,921 |
-| Blue Cross | 1,875 |
-| UnitedHealthcare | 1,837 |
+<img width="811" height="460" alt="image" src="https://github.com/user-attachments/assets/37cce787-b86d-406a-a0dc-3ba3d0ecad59" />
 
 
+### 4. Advanced Analysis 2
+- Blood group versus medical condition analysis.
+- Medical conditions across gender categories.
+- Insurance provider-wise patient distribution.
+- Average billing amount across age and medical condition categories.
 
+### 5. Insights 1
+- Medical condition analysis across six demographic segments:
+  - Young-Male
+  - Young-Female
+  - Middle-Male
+  - Middle-Female
+  - Senior-Male
+  - Senior-Female
 
-**Insight:** Medicare covers the largest number of patient records in this dataset, accounting for 24.28% of the total.
+### 6. Insights 2
+- Patient count and average billing amount analysis.
+- Additional demographic and category-based summaries.
+- Percentage change calculations for comparative analysis.
 
-### 6. Cancer has the highest average billing amount
+## 🔍 Key Analytical Findings
 
-| Medical Condition | Average Billing Amount |
-|---|---:|
-| Cancer | $39,676.54 |
-| Diabetes | $30,070.07 |
-| Asthma | $22,644.61 |
-| Arthritis | $20,055.06 |
-| Hypertension | $17,643.29 |
-| Obesity | $12,535.69 |
+- **Hypertension** is the most frequently recorded medical condition, affecting 2,155 patients (21.55% of the dataset).
+- **Senior patients** represent the largest age segment, with 3,813 records (38.13%).
+- **Emergency admissions** have the highest average billing amount at approximately $24,279.
+- **Medicare** has the highest patient count among insurance providers, covering 2,428 records.
+- **Cancer** accounts for 1,647 patient records, while Diabetes accounts for 1,434.
 
-**Insight:** Cancer has the highest average billing amount, while obesity has the lowest. This is a descriptive comparison and does not establish why billing amounts differ.
+*Note: These findings represent the analyzed dataset and should not be interpreted as national US healthcare statistics.*
 
-### 7. Middle-aged and senior patients show different condition patterns
+## 🛠️ Tools & Skills Used
 
-The age-group Pivot Table shows:
-- Hypertension is the most frequent condition among Middle and Senior patients.
-- Asthma is the most frequent condition among Young patients.
-- Senior patients have the highest overall patient count.
-
-**Insight:** The distribution of recorded medical conditions varies across age groups, making demographic segmentation useful for further investigation.
-
-### 8. Admission volume varies across months
-
-The monthly analysis identifies:
-- October: **883 admissions**
-- March: 850 admissions
-- August: 845 admissions
-- February: 778 admissions
-
-**Insight:** October has the highest admission count among the months shown, while February has the lowest.
-
-## Additional Analysis
-
-The workbook also explores:
-
-- Medical conditions across blood groups.
-- Gender-wise distribution of medical conditions.
-- Medical-condition patterns across age-and-gender segments.
-- Insurance-provider billing comparisons.
-- Weekly admission patterns by medical condition.
-- Average billing amount across admission days.
-- Length-of-stay patterns.
-
-These additional summaries provide more detailed views of the dataset beyond the eight key findings.
-
-## Business Recommendations
-
-Based on the descriptive findings, the following areas may be worth investigating further:
-
-1. **Condition-wise resource planning:** Review the higher recorded volume of hypertension cases when evaluating staffing and service requirements.
-2. **Senior-patient services:** Explore whether the larger senior-patient segment requires additional age-focused service planning.
-3. **Emergency billing review:** Investigate the factors associated with higher average emergency billing.
-4. **Insurance analysis:** Compare provider-level billing and patient volumes to better understand differences across insurance groups.
-5. **Monthly capacity planning:** Review monthly admission patterns when planning operational capacity.
-6. **Length-of-stay monitoring:** Use the calculated stay duration to investigate unusually long or short hospital stays.
-
-## Skills Demonstrated
-
+### Tools
 - Microsoft Excel
+- Excel PivotTables
+- Excel PivotCharts
+
+### Technical Skills
 - Data Cleaning
-- Data Preparation
 - Data Transformation
-- Pivot Tables
-- Advanced Excel Formulas
-- `COUNTIFS` and conditional calculations
-- Demographic Analysis
-- Healthcare Data Analysis
-- Billing Analysis
 - Exploratory Data Analysis (EDA)
-- Business Insight Generation
+- Data Aggregation
+- Demographic Segmentation
+- Healthcare Data Analysis
+- Statistical Comparison
+- Data Visualization
+- Business Intelligence
 
-## Project File
+## 💡 Business Value
 
-The repository includes the Excel workbook:
+This analysis demonstrates how Excel can transform raw healthcare records into meaningful analytical information.
 
-`Complete US HealthCare Project.xlsx`
+The findings can help identify patient demographics, understand medical condition patterns, compare healthcare billing amounts, evaluate insurance distribution, and support data-driven healthcare decision-making.
 
-Open the workbook in Microsoft Excel to explore the raw data, prepared dataset, Pivot Tables, calculations, and analysis sheets.
+## 📁 Repository Contents
 
-## Conclusion
+```text
+US-Healthcare-Data-Analysis/
+│
+├── Complete US HealthCare Project.xlsx
+└── README.md
+```
 
-This project demonstrates how Microsoft Excel can be used to transform raw healthcare records into structured information and meaningful analytical insights.
+## 👨‍💻 Author
 
-By combining data preparation, calculated fields, Pivot Tables, and comparative analysis, the project explores patient demographics, medical conditions, admission patterns, insurance providers, and billing trends.
+**Aryan Kumar**
+
+Aspiring Data Analyst | Excel | SQL | Power BI | Data Analytics
+
+- GitHub: [aryan92001](https://github.com/aryan92001)
+- LinkedIn: [Aryan Kumar](https://www.linkedin.com/in/aryan-kumar-4a956b341/)
 
 ---
 
-**If you find this project useful, feel free to star the repository!**
+⭐ If you find this project useful, consider giving this repository a star!
